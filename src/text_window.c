@@ -30,6 +30,28 @@ static const u8 sTextWindowFrame18_Gfx[] = INCGFX_U8("graphics/text_window/18.pn
 static const u8 sTextWindowFrame19_Gfx[] = INCGFX_U8("graphics/text_window/19.png", ".4bpp");
 static const u8 sTextWindowFrame20_Gfx[] = INCGFX_U8("graphics/text_window/20.png", ".4bpp");
 
+// Adds 20 more decorative borders for text boxes.
+static const u8 sTextWindowFrame21_Gfx[] = INCGFX_U8("graphics/text_window/21.png", ".4bpp");
+static const u8 sTextWindowFrame22_Gfx[] = INCGFX_U8("graphics/text_window/22.png", ".4bpp");
+static const u8 sTextWindowFrame23_Gfx[] = INCGFX_U8("graphics/text_window/23.png", ".4bpp");
+static const u8 sTextWindowFrame24_Gfx[] = INCGFX_U8("graphics/text_window/24.png", ".4bpp");
+static const u8 sTextWindowFrame25_Gfx[] = INCGFX_U8("graphics/text_window/25.png", ".4bpp");
+static const u8 sTextWindowFrame26_Gfx[] = INCGFX_U8("graphics/text_window/26.png", ".4bpp");
+static const u8 sTextWindowFrame27_Gfx[] = INCGFX_U8("graphics/text_window/27.png", ".4bpp");
+static const u8 sTextWindowFrame28_Gfx[] = INCGFX_U8("graphics/text_window/28.png", ".4bpp");
+static const u8 sTextWindowFrame29_Gfx[] = INCGFX_U8("graphics/text_window/29.png", ".4bpp");
+static const u8 sTextWindowFrame30_Gfx[] = INCGFX_U8("graphics/text_window/30.png", ".4bpp");
+static const u8 sTextWindowFrame31_Gfx[] = INCGFX_U8("graphics/text_window/31.png", ".4bpp");
+static const u8 sTextWindowFrame32_Gfx[] = INCGFX_U8("graphics/text_window/32.png", ".4bpp");
+static const u8 sTextWindowFrame33_Gfx[] = INCGFX_U8("graphics/text_window/33.png", ".4bpp");
+static const u8 sTextWindowFrame34_Gfx[] = INCGFX_U8("graphics/text_window/34.png", ".4bpp");
+static const u8 sTextWindowFrame35_Gfx[] = INCGFX_U8("graphics/text_window/35.png", ".4bpp");
+static const u8 sTextWindowFrame36_Gfx[] = INCGFX_U8("graphics/text_window/36.png", ".4bpp");
+static const u8 sTextWindowFrame37_Gfx[] = INCGFX_U8("graphics/text_window/37.png", ".4bpp");
+static const u8 sTextWindowFrame38_Gfx[] = INCGFX_U8("graphics/text_window/38.png", ".4bpp");
+static const u8 sTextWindowFrame39_Gfx[] = INCGFX_U8("graphics/text_window/39.png", ".4bpp");
+static const u8 sTextWindowFrame40_Gfx[] = INCGFX_U8("graphics/text_window/40.png", ".4bpp");
+
 const u16 gTextWindowFrame1_Pal[] = INCGFX_U16("graphics/text_window/1.png", ".gbapal");
 static const u16 sTextWindowFrame2_Pal[] = INCGFX_U16("graphics/text_window/2.png", ".gbapal");
 static const u16 sTextWindowFrame3_Pal[] = INCGFX_U16("graphics/text_window/3.png", ".gbapal");
@@ -50,6 +72,9 @@ static const u16 sTextWindowFrame17_Pal[] = INCGFX_U16("graphics/text_window/17.
 static const u16 sTextWindowFrame18_Pal[] = INCGFX_U16("graphics/text_window/18.png", ".gbapal");
 static const u16 sTextWindowFrame19_Pal[] = INCGFX_U16("graphics/text_window/19.png", ".gbapal");
 static const u16 sTextWindowFrame20_Pal[] = INCGFX_U16("graphics/text_window/20.png", ".gbapal");
+
+// All 20 new options use the same palette as Frame 21. Do not need to load 19 more when they are all the same.
+static const u16 sTextWindowFrame21_Pal[] = INCGFX_U16("graphics/text_window/21.png", ".gbapal");
 
 static const u16 sTextWindowPalettes[][16] =
 {
@@ -81,7 +106,29 @@ static const struct TilesPal sWindowFrames[WINDOW_FRAMES_COUNT] =
     {sTextWindowFrame17_Gfx, sTextWindowFrame17_Pal},
     {sTextWindowFrame18_Gfx, sTextWindowFrame18_Pal},
     {sTextWindowFrame19_Gfx, sTextWindowFrame19_Pal},
-    {sTextWindowFrame20_Gfx, sTextWindowFrame20_Pal}
+    {sTextWindowFrame20_Gfx, sTextWindowFrame20_Pal},
+
+    // Register the 20 new options to the menu.
+    {sTextWindowFrame21_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame22_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame23_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame24_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame25_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame26_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame27_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame28_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame29_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame30_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame31_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame32_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame33_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame34_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame35_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame36_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame37_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame38_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame39_Gfx, sTextWindowFrame21_Pal},
+    {sTextWindowFrame40_Gfx, sTextWindowFrame21_Pal}
 };
 
 static const u16 sTextWindowDexNavFrame[] = INCGFX_U16("graphics/text_window/dexnav_pal.pal", ".gbapal");
